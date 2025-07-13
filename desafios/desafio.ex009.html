@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        input{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>De qual pais Você e?</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res" ></div>
+
+    <script>
+        function calcular(){
+            var txtpaiss = document.getElementById('txtpais')
+            
+            if (txtpaiss.value.toLowerCase() == 'brasil'){
+                res.innerHTML = `<p>Brasileiro(a)</p>`
+            }
+            else{
+                res.innerHTML = `<p>Estrangeiro(a)</p>`
+            }
+            
+            
+            
+        }
+    </script>
+</body>
+</html>
